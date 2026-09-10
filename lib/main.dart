@@ -104,6 +104,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
+            const Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.sports_soccer,
+                  size: 42,
+                  color: Colors.black87,
+                ),
+                SizedBox(width: 8),
+                Icon(
+                  Icons.music_note,
+                  size: 24,
+                  color: Colors.deepPurple,
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
             const Text(
               'Ella has pushed the button this many times:',
               style: TextStyle(
